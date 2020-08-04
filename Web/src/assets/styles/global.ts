@@ -1,5 +1,10 @@
+import { createGlobalStyle } from 'styled-components';
+
+
+export default createGlobalStyle`
+
 :root {
-  --color-background: #2e2ed3;
+  --color-background: #d1b3ff;
   --color-primary-lighter: #4e20b9;
   --color-primary-light: #301869;
   --color-primary: #392b5a;
@@ -45,6 +50,7 @@ input,
 button,
 textarea {
   font-family: 500 1.6rem Poppins;
+  color: var(--color-text-base);
 }
 
 .container {
@@ -57,3 +63,5 @@ textarea {
     font-size: 62.5%;
   }
 }
+
+`;
