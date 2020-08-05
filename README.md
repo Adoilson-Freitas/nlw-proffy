@@ -3,7 +3,7 @@
 ## ![logo](https://user-images.githubusercontent.com/56658900/89359876-396ee580-d69d-11ea-8342-628051853c57.png)
 
 
- Projeto desenvolvido para conectar professores a alunos, realizado na Semana do Próximo Nível # 2 @Rocketseat
+ Projeto desenvolvido para conectar professores a alunos, realizado na Next Level Week #2 da Rocketseat
 
 
 ------------
