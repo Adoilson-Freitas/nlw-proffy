@@ -10,17 +10,19 @@
 
 
 ## Imagens projeto  web
-![webpag1](https://user-images.githubusercontent.com/56658900/89359554-78e90200-d69c-11ea-8973-bcb786707834.png)
 
-
-
-![pagi2](https://user-images.githubusercontent.com/56658900/89359573-8b633b80-d69c-11ea-8150-5f2296eb5dea.png)
+![principal](https://user-images.githubusercontent.com/56658900/89448087-71256e00-d72d-11ea-8854-13bfc7f77ea8.png)
 
 ------------
 
+### Tecnologias
+
+- React.js
+- Typescript
+- Styled-Components
 
 
-### 💻 Executar projeto da Web
+### Executar projeto da Web
 
 ######  Ir para pasta Web
 $ cd nlw-proffy/Web
