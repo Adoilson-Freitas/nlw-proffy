@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Header = styled.div`
+export const Header = styled.header`
  display: flex;
  flex-direction: column;
  background: var(--color-primary);
@@ -42,6 +42,13 @@ export const Header = styled.div`
    color: var(--color-title-in-primary)
  }
 
+ .header-content p{
+   max-width: 30rem;
+   font-size: 1.6rem;
+   line-height: 2.6rem;
+   margin-top: 2.4rem;
+   color: var(--color-text-in-primary)
+ }
 
 
   @media (min-width: 700px) {

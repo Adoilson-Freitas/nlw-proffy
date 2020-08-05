@@ -11,7 +11,6 @@
   color: var(--color-text-in-primary);
   background: var(--color-primary);
 
-
 .logo-container {
   text-align: center;
   margin-bottom: 3.2rem;
@@ -72,11 +71,11 @@
 }
 
 .buttons-container a.give-classes {
-  background: var(--color-secundary);
+  background: var(--color-secondary);
 }
 
 .buttons-container a.give-classes:hover {
-  background: var(--color-secundary-dark);
+  background: var(--color-secondary-dark);
 }
 
 .total-connections {

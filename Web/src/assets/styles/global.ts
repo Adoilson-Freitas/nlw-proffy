@@ -10,15 +10,15 @@ export default createGlobalStyle`
   --color-primary: #392b5a;
   --color-primary-dark: #774dd6;
   --color-primary-darker: #6842c2;
-  --color-secundary: #0b928b;
-  --color-secundary-dark: #057184;
+  --color-secondary: #0b928b;
+  --color-secondary-dark: #057184;
   --color-title-in-primary: #ffffff;
   --color-text-in-primary: #d4c2ff;
   --color-text-title: #32264d;
   --color-text-complement: #9c98a6;
   --color-text-base: #6a6180;
   --color-line-in-white: #e6e6f0;
-  --color-input-background: #f8f8fc;
+  --color-input-background: #d6d6dc;
   --color-button-text: #ffffff;
   --color-box-base: #ffffff;
   --color-box-footer: #fafafc;

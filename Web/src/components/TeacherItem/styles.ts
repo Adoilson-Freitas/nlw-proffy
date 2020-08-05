@@ -1,6 +1,6 @@
  import styled from 'styled-components';
  
-export const Main = styled.div`
+export const Main = styled.main`
   margin: 3.2rem auto;
   width: 90%;
 
@@ -70,7 +70,7 @@ export const Main = styled.div`
   footer button {
     width: 20rem;
     height: 5.6rem;
-    background: var(--color-secundary);
+    background: var(--color-secondary);
     color: var(--color-button-text);
     border: 0;
     border-radius: 0.8rem;
@@ -83,7 +83,7 @@ export const Main = styled.div`
   }
 
   footer button:hover {
-    background: var(--color-secundary-dark);
+    background: var(--color-secondary-dark);
   }
 
   @media (min-width: 700px) {
