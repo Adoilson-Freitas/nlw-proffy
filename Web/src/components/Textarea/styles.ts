@@ -1,7 +1,7 @@
  import styled from 'styled-components';
  
 
- export const TextareaForm = styled.form`
+ export const TextareaForm = styled.div`
   .textarea-block {
     position: relative;
   }

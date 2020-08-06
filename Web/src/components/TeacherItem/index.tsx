@@ -1,35 +1,54 @@
 import React from 'react';
 import { Main } from './styles'
 import whatsappIcon from '../../assets/images/icons/whatsapp.svg';
- 
-export default function TeacherList() {
+import api from '../../services/api';
+
+export interface Teacher {
+  id: number;
+    name: string;
+    avatar: string;
+    whatsapp: string;
+    bio: string;
+    subject: string;
+    cost: number;
+}
+
+interface TeacherItemProps {
+  teacher: Teacher;
+}
+
+ const TeacherItem: React.FC<TeacherItemProps> = ({ teacher }) => {
+   function createNewConnection() {
+     api.post('connections', {
+       user_id: teacher.id,
+     })
+   }
   return (
       <Main>
         <article>
          <header>
-            <img src="https://avatars2.githubusercontent.com/u/2254731?s=460&u=0ba16a79456c2f250e7579cb388fa18c5c2d7d65&v=4" alt="Diego Fernandes"/>
+            <img src={teacher.avatar} alt={teacher.name}/>
             <div>
-              <strong>Diego Fernandes</strong>
-              <span>Química</span>
+            <strong>{teacher.name}</strong>
+              <span>{teacher.subject}</span>
             </div>
          </header>
-         <p>
-         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget iaculis quam, eu auctor lorem. Etiam vehicula ultricies ero
-             <br/> <br/>
-             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget iaculis quam, eu auctor lorem. Etiam vehicula ultricies ero
-         </p>
+        <p>{teacher.bio}</p>
 
          <footer>
           <p>
             preço/hora
-            <strong>R$ 80,00</strong>
+            <strong>R${teacher.cost}</strong>
           </p>
-          <button type="button">
+          
+          <a target="_blank" onClick={createNewConnection} href={`https://wa.me/${teacher.whatsapp}`}>
             <img src={whatsappIcon} alt="whatsapp"/>
             <p>Entrar em contato</p>
-          </button>
+          </a>
          </footer>
         </article>
       </Main>
   )
 }
+
+export default TeacherItem;

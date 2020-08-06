@@ -61,15 +61,17 @@ export const Main = styled.main`
     color: var(--color-primary);
     font-size: 1.5rem;
     display: block;
+    margin-left: 4px;
   }
  
-  footer button p {
+  footer a p {
     font-size: 1.4rem;
   }
 
-  footer button {
+  footer a {
     width: 20rem;
     height: 5.6rem;
+    margin-left: 4px;
     background: var(--color-secondary);
     color: var(--color-button-text);
     border: 0;
@@ -80,9 +82,10 @@ export const Main = styled.main`
     align-items: center;
     justify-content: space-evenly;
     transition: 0.2s;
+    text-decoration: none;
   }
 
-  footer button:hover {
+  footer a:hover {
     background: var(--color-secondary-dark);
   }
 
@@ -107,14 +110,14 @@ export const Main = styled.main`
     margin-left: 1.6rem;
   }
 
-  footer button {
-    widows: 24.5rem;
+  footer a {
+    width: 24.5rem;
     font-size: 1.6rem;
     justify-content: center;
   }
 
 
-  footer button img {
+  footer a img {
     margin-left: 1.6rem;
   }
 `;

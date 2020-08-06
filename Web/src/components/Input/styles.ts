@@ -1,7 +1,7 @@
  import styled from 'styled-components';
  
 
- export const InputForm = styled.form`
+ export const InputForm = styled.div`
   .input-block {
     position: relative;
   }

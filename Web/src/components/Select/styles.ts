@@ -1,7 +1,7 @@
  import styled from 'styled-components';
  
 
- export const SelectForm = styled.form`
+ export const SelectForm = styled.div`
   .select-block {
     position: relative;
   }
