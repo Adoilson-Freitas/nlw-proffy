@@ -28,7 +28,10 @@
 }
 
 .hero-image {
-  width: 100%;
+  width: 90%;
+  margin-left: 5%;
+  height: 100%;
+
 }
 
 .buttons-container {
@@ -92,8 +95,8 @@
 
 @media (min-width: 600px) {
   .hero-image {
-    width: 70%;
-    margin-left: 15%;
+    width: 60%;
+    margin-left: 20%;
 
   }
   .logo-container img {
@@ -116,7 +119,7 @@
 
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 700px) {
   #page-landing-content {
     max-width: 1000px;
 
@@ -159,10 +162,23 @@
     font-size: 2.4rem;
   }
 
+
+.buttons-container a {
+  width: 20rem;
+}
+
   .total-connections {
     grid-area: total;
     justify-self: end;
+    width: 30rem;
   }
+}
+
+@media (min-width: 900px) {
+  .buttons-container a {
+  width: 30rem;
+}
 }
  `;
  
+

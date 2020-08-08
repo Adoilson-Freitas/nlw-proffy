@@ -4,16 +4,16 @@ import { createGlobalStyle } from 'styled-components';
 export default createGlobalStyle`
 
 :root {
-  --color-background: #d1b3ff;
-  --color-primary-lighter: #4e20b9;
-  --color-primary-light: #301869;
-  --color-primary: #392b5a;
+  --color-background: #f7f7f7;
+  --color-primary-lighter: #ff751a;
+  --color-primary-light: #e65c00;
+  --color-primary: #0040ff;
   --color-primary-dark: #774dd6;
   --color-primary-darker: #6842c2;
-  --color-secondary: #0b928b;
-  --color-secondary-dark: #057184;
+  --color-secondary: #1aa3ff;
+  --color-secondary-dark: #008ae6;
   --color-title-in-primary: #ffffff;
-  --color-text-in-primary: #d4c2ff;
+  --color-text-in-primary: #ffffff;
   --color-text-title: #32264d;
   --color-text-complement: #9c98a6;
   --color-text-base: #6a6180;

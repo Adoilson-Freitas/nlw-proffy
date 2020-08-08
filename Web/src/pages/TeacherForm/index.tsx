@@ -17,7 +17,6 @@ export default function TeacherForm() {
   const [whatsapp, setWhatsapp] = useState('');
   const [bio, setBio] = useState('');
 
-  const [subject, setSubject] = useState('');
   const [cost, setCost] = useState('');
 
   const [scheduleItems, setScheduleItems] = useState([
@@ -51,7 +50,6 @@ export default function TeacherForm() {
     avatar,
     whatsapp,
     bio,
-    subject, 
     cost: Number(cost),
     schedule:scheduleItems,
    }).then(() => {
@@ -105,24 +103,6 @@ export default function TeacherForm() {
           <fieldset>
             <legend>Sobre a aula</legend>
 
-            <Select 
-              name="subject" 
-              label="Matéria"
-              value={subject}
-              onChange={(e) => { setSubject(e.target.value)}}
-              options={[
-                { value: 'Artes', label: 'Artes' },
-                { value: 'Biologia', label: 'Biologia' },
-                { value: 'Ciências', label: 'Ciências' },
-                { value: 'Educação física', label: 'Educação física' },
-                { value: 'Física', label: 'Física' },
-                { value: 'Geografia', label: 'Geografia' },
-                { value: 'História', label: 'Histtória' },
-                { value: 'Matemática', label: 'Matemática' },
-                { value: 'Português', label: 'Português' },
-                { value: 'Química', label: 'Química' },
-              ]}
-            />
             <Input  
               name="const" 
               label="Custo da sua aula"

@@ -9,7 +9,6 @@ export interface Teacher {
     avatar: string;
     whatsapp: string;
     bio: string;
-    subject: string;
     cost: number;
 }
 
@@ -30,7 +29,7 @@ interface TeacherItemProps {
             <img src={teacher.avatar} alt={teacher.name}/>
             <div>
             <strong>{teacher.name}</strong>
-              <span>{teacher.subject}</span>
+              <span>Professor(a) de inglês</span>
             </div>
          </header>
         <p>{teacher.bio}</p>

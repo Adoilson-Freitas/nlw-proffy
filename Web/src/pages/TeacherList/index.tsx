@@ -11,7 +11,6 @@ import api from '../../services/api';
 export default function TeacherList() {
   const [teachers, setTeachers] = useState([]);
 
-  const [subject, setSubject] = useState('');
   const [week_day, setWeekDay] = useState('');
   const [time, setTime] = useState('');
 
@@ -20,7 +19,6 @@ export default function TeacherList() {
 
     const response = await api.get('classes', {
       params: {
-        subject,
         week_day,
         time
       }
@@ -32,27 +30,9 @@ export default function TeacherList() {
 
   return (
     <TeacherPage>
-      <PageHeader title="Estes são os proffys disponìveis.">
+      <PageHeader title="Pesquisar professores são disponìveis.">
         <form onSubmit={searchTeacher}>
         <Form>
-        <Select 
-            name="subject" 
-            label="Matéria"
-            value={subject}
-            onChange={(e) => { setSubject(e.target.value)}}
-            options={[
-              { value: 'Artes', label: 'Artes' },
-              { value: 'Biologia', label: 'Biologia' },
-              { value: 'Ciências', label: 'Ciências' },
-              { value: 'Educação física', label: 'Educação física' },
-              { value: 'Física', label: 'Física' },
-              { value: 'Geografia', label: 'Geografia' },
-              { value: 'Histtória', label: 'Histtória' },
-              { value: 'Matemática', label: 'Matemática' },
-              { value: 'Português', label: 'Português' },
-              { value: 'Química', label: 'Química' },
-            ]}
-          />
 
           <Select 
             name="week_day" 
