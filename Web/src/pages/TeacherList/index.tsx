@@ -28,6 +28,7 @@ export default function TeacherList() {
    
     setTeachers(response.data);
   }
+ 
 
   return (
     <TeacherPage>

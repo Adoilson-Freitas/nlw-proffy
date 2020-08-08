@@ -10,6 +10,7 @@ import api from '../../services/api';
 
  
 export default function TeacherForm() {
+ 
   const history = useHistory();
   const [name, setName] = useState('');
   const [avatar, setAvatar] = useState('');
@@ -54,14 +55,13 @@ export default function TeacherForm() {
     cost: Number(cost),
     schedule:scheduleItems,
    }).then(() => {
-     alert('Cadastro realizado com sucesso!')
-
-     history.push('/');
+     history.push('/checked');
    }).catch(() => {
     alert('Erro do cadastro!')
    })
 
   }
+
 
   return (
     <FormPage className="header-content">
@@ -117,7 +117,7 @@ export default function TeacherForm() {
                 { value: 'Educação física', label: 'Educação física' },
                 { value: 'Física', label: 'Física' },
                 { value: 'Geografia', label: 'Geografia' },
-                { value: 'Histtória', label: 'Histtória' },
+                { value: 'História', label: 'Histtória' },
                 { value: 'Matemática', label: 'Matemática' },
                 { value: 'Português', label: 'Português' },
                 { value: 'Química', label: 'Química' },
