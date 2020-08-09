@@ -20,12 +20,19 @@ export const Image = styled.Image`
 export const Title = styled.Text`
     font-family: Archivo_700Bold;
     color: #FFF;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 32px;
     max-width: 200px;
     margin: 40px 0;
 `;
 
+export const Description = styled.Text`
+   max-width: 290px;
+   color: #fff;
+   font-family: Poppins_400Regular;
+   font-size: 12px;
+   line-height: 20px;
+`;
 
 export const Header = styled.View`
     flex-direction: row;

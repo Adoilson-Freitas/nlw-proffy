@@ -76,7 +76,7 @@ export const ButtonContainer = styled.View`
 
 
 export const FavoriteButton = styled.TouchableOpacity`
-   background-color: #0040ff;
+   background-color: #f7f7fd;
    width: 56px;
    height: 56px;
    border-radius: 8px;
@@ -85,16 +85,6 @@ export const FavoriteButton = styled.TouchableOpacity`
    margin-right: 8px;
 `;
 
-
-export const UnFavoriteButton = styled.TouchableOpacity`
-   background-color: #ff751a;
-   width: 56px;
-   height: 56px;
-   border-radius: 8px;
-   justify-content: center;
-   align-items: center;
-   margin-right: 0px;
-`;
 
 
 export const ContactButton = styled.TouchableOpacity`
