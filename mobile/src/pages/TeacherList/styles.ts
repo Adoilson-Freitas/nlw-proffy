@@ -32,10 +32,10 @@ export const InputBlock = styled.View`
 export const TextInput = styled.TextInput`
     height: 54px;
     background-color: #fff;
-    border-radius: 8px;
     justify-content: center;
     padding: 0 16px;
     margin: 4px 0 16px 0;
+    
 `;
 
 export const Picker = styled.Picker`
@@ -46,7 +46,7 @@ export const Picker = styled.Picker`
     padding: 0 16px;
     margin: 4px 0 16px 0;
     border-width: 3px;
-    border-color: #1aa3ff;
+    color: #c1bccc;
     overflow: hidden;
 `;
 

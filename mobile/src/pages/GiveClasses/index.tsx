@@ -2,11 +2,27 @@ import React, { useState } from 'react';
 import { useNavigation } from '@react-navigation/native';
 
 
-import {Container, Description, Fieldset, Main, Input, Legend, Textarea, Label, InputGroup, InputBlock } from './styles';
+import {
+    Container, 
+    Description, 
+    Fieldset, 
+    Main, 
+    Input, 
+    Legend, 
+    Textarea, 
+    Label, 
+    InputGroup, 
+    InputBlock,
+    ButtonEnv,
+    TextWarning
+    
+} from './styles';
 import PageHeader from '../../components/PageHeader';
 import { ScrollView } from 'react-native-gesture-handler';
 import { Picker } from 'react-native';
-
+import { Footer } from '../../components/TeacherItem/styles';
+import { AntDesign } from '@expo/vector-icons'; 
+import { TextButton } from '../Landing/styles';
 function GiveClasses() {
     const [ week_day, setWeekDay ] = useState('');
 
@@ -111,6 +127,19 @@ function GiveClasses() {
                     </InputGroup>
          
         </Fieldset>
+
+        <Footer>
+          <TextWarning>
+          <AntDesign name="warning" size={24} color="red" />
+          {'  '} Importante! {'\n'}
+            Preencha todos os dados
+          </TextWarning>
+          <ButtonEnv>
+            <TextButton>
+            Salvar cadastro
+            </TextButton>
+          </ButtonEnv>
+          </Footer>
             </Main>
             </ScrollView>
         </Container>

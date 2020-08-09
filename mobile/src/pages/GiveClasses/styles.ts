@@ -2,15 +2,16 @@ import styled from 'styled-components/native';
 
 export const Container = styled.View`
      justify-content: center;
-    background-color: #fff;
+    background-color: #f7f7f7;
 `;
 
   export const Main = styled.View`
-  background-color: #f7f7f7;
+  background-color: #fff;
   border-width: 1px;
   border-color: #e6e6f0;
   border-radius: 8px;
   overflow: hidden;
+  margin-bottom: 20px;
   `;
 
 export const Description = styled.Text`
@@ -23,13 +24,21 @@ export const Description = styled.Text`
    margin-left: 20px;
 `;
 
+export const TextWarning = styled.Text`
+   color: #888;
+   font-family: Poppins_400Regular;
+   font-size: 12px;
+   line-height: 20px;
+   margin-left: 20px;
+`;
 
-export const ButtonOk = styled.TouchableOpacity`
+export const ButtonEnv = styled.TouchableOpacity`
   align-items: center;
+  width: 100%;
   justify-content: center;
   margin: 0 40px;
   height: 58px;
-  background-color: #ff751a;
+  background-color: #1aa3ff;
   border-radius: 8px;
 
 `;
@@ -41,7 +50,7 @@ export const Fieldset = styled.View`
 export const Legend = styled.Text`
     color: #333;
     margin-bottom: 14px;
-    margin-top: 14px;
+    margin-top: 8px;
     width: 100%;
     padding-bottom: 16px;
     font-size: 16px;
@@ -57,11 +66,13 @@ export const Label = styled.Text`
 export const Input = styled.TextInput`
      width: 100%;
      height: 54px;
-    background-color: #fff;
     border-radius: 8px;
     justify-content: center;
     padding: 0 16px;
     margin: 4px 0 16px 0;
+    border-width: 1px;
+    border-color: #aaaaaadf;
+    background-color: #f8f8f8;
 `;
 
 export const InputBlock = styled.View`
@@ -71,8 +82,10 @@ export const InputBlock = styled.View`
 export const Textarea = styled.TextInput`
     width: 100%;
      height: 70px;
-    background-color: #fff;
-    border-radius: 8px;
+     border-radius: 8px;
+     border-width: 1px;
+    border-color: #aaaaaadf;
+    background-color: #f8f8f8;
     justify-content: center;
     padding: 0 16px;
     margin: 4px 0 16px 0;
