@@ -12,12 +12,21 @@ export const Image = styled.Image`
   resize-mode: contain;
 `;
 
+export const ImageLogo = styled.Image`
+  width: 100%;
+  top: -480px;
+  resize-mode: contain;
+  position: absolute;
+  left: 30px;
+
+`;
+
 export const Text = styled.Text`
 font-family: Poppins_400Regular;
  color: #fff;
- font-size: 20px;
+ font-size: 20px; 
  line-height: 30px;
- margin-top: 60px;
+ margin-top: 260px;
 `;
 
 

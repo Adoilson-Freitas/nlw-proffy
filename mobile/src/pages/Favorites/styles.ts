@@ -5,3 +5,7 @@ export const Container = styled.View`
     background-color: #f5f5f5;
 `;
 
+export const ScrollView = styled.ScrollView`
+    margin-top: -40px;
+`;
+

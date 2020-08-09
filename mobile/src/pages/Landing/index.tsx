@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigation } from '@react-navigation/native';
 import { 
   Container, 
@@ -9,17 +9,30 @@ import {
   ButtonContainer, 
   BottonStudy,
   BottonClass,
-  TextConnections
+  TextConnections,
+  ImageLogo
 } from './styles'; 
 
 import landingImg from '../../assets/images/lesson2.png';
 import studyIcon from '../../assets/images/icons/study.png';
 import giveClassIcon from '../../assets/images/icons/give-classes.png';
 import { AntDesign } from '@expo/vector-icons'; 
+import api from '../../services/api';
 
 
 function Landing (){
   const { navigate } = useNavigation();
+  const [ totalConnections, setTotalConnections ] = useState(0);
+
+  useEffect(() => {
+    api.get('connections').then(response => {
+      const { total } = response.data;
+
+      setTotalConnections(total)
+    });
+      
+    }, []);
+
 
   function handleNavigateToGiveClassesPage() {
     navigate('GiveClasses');
@@ -31,7 +44,7 @@ function Landing (){
 
   return (
     <Container>
-      <Image source={landingImg}/> 
+      <ImageLogo source={landingImg}/> 
 
   <Text>Seja bem-vindo, {'\n'}
     <Strong>O que deseja fazer?</Strong>
@@ -53,7 +66,7 @@ function Landing (){
 
 
     <TextConnections>
-      Total de 285 conexões já realizadas {' '} 
+      Total de {totalConnections} conexões já realizadas {' '} 
       <AntDesign name="heart" size={14} color="#ff751a" />
     </TextConnections>
 

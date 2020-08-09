@@ -38,7 +38,7 @@ export const ButtonOk = styled.TouchableOpacity`
   justify-content: center;
   margin: 0 40px;
   height: 58px;
-  background-color: #1aa3ff;
+  background-color: #ff751a;
   border-radius: 8px;
 
 `;

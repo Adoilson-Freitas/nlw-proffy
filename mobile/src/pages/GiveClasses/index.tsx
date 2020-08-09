@@ -18,7 +18,7 @@ function GiveClasses() {
                 resizeMode='contain'
                 source={GiveClassesBgImages}
             >
-                <Title>Quer ser um Proffy?</Title>
+                <Title>Quer ser um Teacher?</Title>
                 <Description>
                     Para começar, você precisa se cadastrar como professor na nossa plataforma web.
             </Description>
